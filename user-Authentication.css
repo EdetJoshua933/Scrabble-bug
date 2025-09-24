@@ -1,0 +1,193 @@
+:root{
+    --bg-body-cl: #9290C3;
+    --container-bg-cl: #535C91;
+    --container-bg-cl-2: #715A5A;
+    --text-cl: #D3DAD9;
+    --nav-bg-cl: #070F2B;
+    --var-bg-cl: #1B1A55;
+    --primary-color: #3498db;
+}
+body{
+    background-color: var(--nav-bg-cl);
+    color: var(--text-cl);
+    justify-items: center;
+    place-items: center;
+    display: grid;
+    place-items: center;
+    min-block-size: 100vh;
+    margin: 0;
+}
+.container{
+    aspect-ratio: 1;
+    display: grid;
+    place-items: center;
+    padding: 2rem;
+    background-image: 
+    conic-gradient(rgb(10, 34, 34), blue, rgb(32, 26, 26),
+    rgba(255, 255, 0, 0.377), rgb(32, 26, 26), blue, rgb(10, 34, 34));
+    width: fit-content;
+    padding: 30px;
+    border-radius: 9px;
+}
+.content{
+    width: 500px;
+    text-align: center;
+}
+.p-cont-samp{
+    text-wrap: wrap;
+    text-align: center;
+}
+.form{
+    grid-area: r2;
+    text-align: center;
+    align-content: center;
+    max-width: fit-content;
+    padding: 19px;
+}
+hr{
+    width: 400px;
+    transform: rotatez(99deg);
+    position: relative;
+    top: -170px;
+    left: 200px;
+}
+input{
+    padding: 18px;
+    border-radius: 9px;
+    border: none;
+    background-color: rgba(0, 65, 245, 0.8);
+    backdrop-filter: blur(4px) brightness(90%);
+    width: 250px;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.6);
+    color: var(--text-cl);
+    font-size: 18px;
+}
+input:nth-child(3){
+    margin-top: 20px;
+}
+input::placeholder{
+    color: var(--text-cl);
+    font-family: verdana;
+}
+input:focus{
+    outline-offset: 5px;
+    outline-color: #0563a1;
+    outline-style: inset;
+    color: var(--text-cl);
+    font-family: verdana;
+    font-size: 16px;
+    transition: outline 0.2s;
+}
+input:active{
+    background-color: rgba(0, 65, 245, 0.3);
+    transition: background 0.2s;
+}
+input[type="checkbox"]{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.form-input button{
+    padding: 18px;
+    width: 290px;
+    color: var(--text-cl);
+    font-size: 24px;
+    font-family: verdana;
+    border: none;
+    border-radius: 9px;
+    background-color: rgba(8, 245, 0, 0.8);
+    backdrop-filter: blur(4px) brightness(90%);
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+.form-input button:hover{
+    background-color: rgba(59, 241, 53, 0.8);
+    transition: background 0.2s;
+}
+.form-nav p{
+    font-family: verdana;
+}
+.form-nav button{
+    padding: 12px;
+    width: 290px;
+    color: #ff0000;
+    font-size: 24px;
+    font-family: verdana;
+    border: none;
+    border-radius: 9px;
+    background-color: rgba(205, 206, 207, 0.8);
+    backdrop-filter: blur(4px) brightness(90%);
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+.form-nav button:hover{
+    background-color: rgb(205, 206, 207);
+    transition: background 0.2s;
+}
+.forms-input label{
+    font-family: verdana;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    text-align: center;
+}
+.forms-input input{
+    padding: 10px;
+    border-radius: 9px;
+    border: none;
+    background-color: rgba(0, 65, 245, 0.8);
+    backdrop-filter: blur(4px) brightness(90%);
+    width: 250px;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.6);
+    margin-bottom: 10px;
+}
+.forms-input input::placeholder{
+    color: var(--text-cl);
+    font-family: verdana;
+    font-size: 14px;
+}
+.forms-input button{
+    padding: 12px;
+    width: 290px;
+    color: var(--text-cl);
+    font-size: 24px;
+    font-family: verdana;
+    border: none;
+    border-radius: 9px;
+    background-color: rgba(8, 245, 0, 0.8);
+    backdrop-filter: blur(4px) brightness(90%);
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+.forms-input button:hover{
+    background-color: rgba(59, 241, 53, 0.8);
+    transition: background 0.2s;
+}
+.container-register{
+    aspect-ratio: 1;
+    display: grid;
+    place-items: center;
+    background-image: 
+    conic-gradient(rgb(10, 34, 34), blue, rgb(32, 26, 26),
+    rgba(255, 255, 0, 0.377), rgb(32, 26, 26), blue, rgb(10, 34, 34));
+    width: fit-content;
+    border-radius: 9px;
+}
+.form-content-register{
+    width: 500px;
+    text-align: center;
+}
+.form-register{
+    background-color: rgba(212, 212, 212, 0.1);
+    backdrop-filter: blur(4px) brightness(90%);
+    border-radius: 9px;
+}
+.forms-input input{
+    width: 400px;
+}
+.classes::after{
+    content: " (must include a number and a special character)";
+    position: relative;
+}
+
